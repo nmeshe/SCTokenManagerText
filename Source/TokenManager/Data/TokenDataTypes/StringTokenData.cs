@@ -36,7 +36,8 @@ namespace TokenManager.Data.TokenDataTypes
     <div class=""field-row {{{{field.class}}}}"">
         <span class=""field-label"">{{{{field.Label}}}} </span>
         <div ng-init=""token.data[field.Name]= token.data[field.Name] ? token.data[field.Name] : '{DefaultValue}';"" class=""field-data"">
-            <input ng-model=""token.data[field.Name]"" size=""50"" placeholder=""{{{{field.Data.Placeholder}}}}"" />
+			<textarea ng-model=""token.data[field.Name]"" rows=""4"" cols=""50"" placeholder=""{{{{field.Data.Placeholder}}}}"">
+			</textarea>
         </div>
     </div>
 ";
